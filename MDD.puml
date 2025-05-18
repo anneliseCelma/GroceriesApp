@@ -1,0 +1,18 @@
+@startuml
+
+class Product{
+    {field} name:String
+    {field} price:double
+    {field} quantity:int
+}
+class Cart{
+    {field} name: String
+    {field} date: Date
+
+}
+
+Cart "1" o-- "1..*" Product : contient >
+
+
+
+@enduml
