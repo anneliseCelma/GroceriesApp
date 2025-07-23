@@ -4,11 +4,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
-import GrosseriesScreen from './screens/GrosseriesScreen';
+import ShoppingListScreen from './screens/ShoppingListScreen';
+import ReceiptScreen from './screens/ReceiptScreen';
+
 
 export type RootStackParamList ={
     Home : undefined;
-    MyGrosseries : undefined;
+    MyShoppingList : undefined;
+    MyReceipt : undefined;
 }
 
 const MyNavigation =createNativeStackNavigator<RootStackParamList>();
@@ -17,8 +20,9 @@ export default function App(): JSX.Element {
   return (
     <NavigationContainer>
       <MyNavigation.Navigator screenOptions={{headerShown:false}}>
-          <MyNavigation.Screen name="Home" component={HomeScreen} />
-          <MyNavigation.Screen name="MyGrosseries" component={GrosseriesScreen} />
+          <MyNavigation.Screen name="Home" component={HomeScreen} options={{animation: 'slide_from_left'}} />
+          <MyNavigation.Screen name="MyShoppingList" component={ShoppingListScreen}/>
+          <MyNavigation.Screen name="MyReceipt" component={ReceiptScreen} />
       </MyNavigation.Navigator>
     </NavigationContainer>
   );
