@@ -22,7 +22,7 @@ export default function App(): JSX.Element {
       <MyNavigation.Navigator screenOptions={{headerShown:false}}>
           <MyNavigation.Screen name="Home" component={HomeScreen} options={{animation: 'slide_from_left'}} />
           <MyNavigation.Screen name="MyShoppingList" component={ShoppingListScreen}/>
-          <MyNavigation.Screen name="MyReceipt" component={ReceiptScreen} />
+          <MyNavigation.Screen name="MyReceipt" component={ReceiptScreen}/>
       </MyNavigation.Navigator>
     </NavigationContainer>
   );

@@ -43,7 +43,7 @@ export default function HomeScreen({navigation}:Props){
                         <Text>Pommes</Text>
                         <View style={{backgroundColor:'#F8F8F8',borderRadius:8,flexDirection:'row',alignItems:'center'}}>
                             <Pressable><Icon name='remove-circle-outline' style={{fontSize:30,color: "#717065"}} /></Pressable>
-                            <TextInput  keyboardType="number-pad"/>
+                            <TextInput keyboardType="number-pad"/>
                             <Pressable><Icon name='add-circle-outline'style={{fontSize:30,color: "#717065"}}  /></Pressable>
                         </View>
                     </View>
